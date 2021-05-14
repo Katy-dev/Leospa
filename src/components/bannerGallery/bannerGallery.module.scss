@@ -1,0 +1,42 @@
+@import '../styles.scss';
+.services {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0.4rem;
+    padding: 3rem 0;
+    .service {
+      height: 90%;
+      position: relative;
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+      .service__wrapper {
+        @extend %fullWindow;
+        @extend %position-absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $red;
+        overflow: hidden;
+        transition: $transition;
+          &:hover {
+            opacity: 0.8;
+            transition: $transition;
+          }
+        .service__wrapper_content {
+          display: flex;
+          flex-direction: column;
+          @extend %position-center;
+          color: white;
+          .service__wrapper_img {
+            padding: 1rem 0;
+            width: 40%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

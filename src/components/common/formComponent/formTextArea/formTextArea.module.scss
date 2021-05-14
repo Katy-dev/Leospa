@@ -1,0 +1,28 @@
+@import '../../../styles';
+
+.container {
+  margin-bottom: 2rem;
+  .notes_wrapper {
+    width: 98%;
+    font-size: $font_13px;
+    background-color: transparent;
+    padding: 1rem 0 1rem 1rem;
+    border-bottom: $borderFirst;
+    color: $gray;
+    margin-right: 1rem;
+  }
+  .wrapper_error {
+    color: $red;
+    font-weight: $light;
+    font-size: $font_13px;
+    padding: 0.5rem;
+  }
+}
+@include mobile-w {
+  .notes_wrapper {
+    font-size: $font_10px;
+  }
+  .wrapper_error {
+    font-size: $font_10px;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../../styles';
+
+.error_wrapper {
+  padding: 0.5rem;
+  .error_message {
+    color: $red;
+    font-weight: $light;
+    font-size: $font_13px;
+  }
+}
+
+@include mobile-w {
+  .error_message {
+    font-size: $font_10px;
+  }
+}

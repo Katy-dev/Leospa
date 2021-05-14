@@ -1,0 +1,27 @@
+@import '../../styles';
+
+.button {
+  border-radius: 3rem;
+  background-color: $red;
+  color: $white;
+  font-size: $font_16px;
+  font-weight: $semiBold;
+  line-height: 0.8;
+  text-transform: uppercase;
+  min-width: 10rem;
+  padding: 1.17rem 0.94rem;
+    &:hover {
+      color: $black;
+      transition: $transition;
+    }
+}
+.card_button {
+  background-color: #30383b;
+  margin-bottom: 30px;
+  border-radius: 3rem;
+  &:hover {
+    background-color: $red ;
+    color: $white;
+    transition: $transition;
+  }
+}

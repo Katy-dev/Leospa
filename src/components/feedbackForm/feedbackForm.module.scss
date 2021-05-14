@@ -1,0 +1,48 @@
+@import '../styles.scss';
+
+.container {
+  @extend %container;
+  text-align: center;
+  margin-bottom: 3rem;
+  .container_description {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: $semiBold;
+  }
+  .description {
+    font-weight: $light;
+    color: $gray;
+  }
+  .feedback__container {
+
+    .address__container {
+      display: flex;
+      justify-content: center;
+      .address__wrapper {
+        width: 50%;
+        .address__wrapper_icon {
+          background-color: $red;
+          width: 50px;
+          height: 50px;
+          display: block;
+          border-radius: 50%;
+          position: relative;
+            & img {
+              @extend %position-center;
+            }
+        }
+        .address__wrapper_descr {
+
+        }
+      }
+    }
+    .feedback__form {
+      width: 50%;
+      background-color: $red;
+    }
+  }
+}

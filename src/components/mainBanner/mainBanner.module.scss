@@ -1,0 +1,108 @@
+@import '../styles.scss';
+
+.mainBanner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+  .mainBanner__img {
+    padding-top: 7%;
+    width: 12%;
+    height: 100%;
+  }
+  .mainBanner__content {
+    width: 50%;
+    padding: 2rem;
+    .mainBanner__header {
+      color: $red;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 1.176rem;
+    }
+    .mainBanner__mainHeader {
+      color: #1e2528;
+      font-size: $font_60px;
+      line-height: 4.4rem;
+      margin-bottom: 1.47rem;
+    }
+    .mainBanner__description {
+      color: #555;
+      margin-bottom: 2.95rem;
+      font-weight: $light;
+    }
+    .wrapperButton {
+      display: flex;
+      padding: 0.5rem 0;
+      .buttonReserve {
+        text-transform: uppercase;
+        color: white;
+        padding: 1.1rem 1.2rem;
+        background-color: $red;
+        cursor: pointer;
+        &:hover {
+          color: $black;
+          transition: all 300ms ease-in-out;
+        }
+      }
+      .buttonVideo {
+        position: relative;
+        background-color: $lightBeige;
+        border-radius: 50%;
+        margin: 0 1rem;
+        width: 50px;
+        height: 50px;
+        .buttonPlayVideo_img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+      }
+      .buttonPlayVideo {
+        color: #555;
+        background-color: transparent;
+        font-weight: $light;
+        cursor: pointer;
+        &:hover {
+          color: $red;
+          transition: all 300ms ease-in-out;
+        }
+      }
+    }
+    .wrapperVideoPlayer {
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      .buttonCancel {
+        background-color: transparent;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        cursor: pointer;
+      }
+      .videoPlayer {
+        width: 50%;
+        height: 50%;
+        opacity: 1;
+        z-index: 5;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+  .mainBanner__spa_img {
+    padding: 1rem 1rem 0 0;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../styles.scss';
+
+.header_wrapper {
+  display: flex;
+  padding: 1% 10%;
+  .header_logo {
+    flex-grow: 1;
+    .logo {
+      width: 10rem;
+    }
+  }
+  .header_menu {
+    @include flex(row, center, space-between);
+    padding-left: 15%;
+    .header_menu_list {
+      display: flex;
+      flex-direction: row;
+      .header_menu_item {
+        font-weight: $light;
+        padding: 0 0.7rem;
+        color: $black;
+        font-size: $font_18px;
+        &:hover {
+          color: $red;
+          transition: $transition;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '../styles.scss';
+
+.wrapper_about_banner {
+  position: relative;
+  max-width: 1140px;
+  margin: 5rem auto;
+  text-align: center;
+  .wrapper_img {
+    width: 10%;
+    position: absolute;
+    top: -10%;
+    left: 20%;
+  }
+  .wrapper_content {
+    margin: 0 auto;
+    width: 85%;
+    padding: 4rem 2rem;
+  }
+  .title_section {
+    color: $gray;
+    font-size: $font_20px;
+    font-weight: $regular;
+    line-height: .8;
+    text-transform: uppercase;
+    margin-bottom: 1.69rem;
+  }
+  .main_title {
+    margin-bottom: 2rem;
+    font-size: $font_40px;
+    font-weight: $semiBold;
+  }
+  .description {
+    font-weight: $light;
+    color: $gray;
+  }
+  .img_right {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

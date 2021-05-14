@@ -1,0 +1,67 @@
+@import '../../styles';
+
+.form_wrapper {
+  height: 100%;
+  width: 60%;
+  padding-left: 6rem;
+  background-color: $lightRed;
+  color: $gray;
+  font-size: $font_13px;
+  .form_content {
+    max-width: 650px;
+    padding: 2rem 0;
+    margin-right: 6rem;
+  }
+    .input_group_wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+}
+@include tablet {
+  .form_wrapper {
+    width: 100%;
+    padding-left: 1rem;
+    .form_content {
+      max-width: 650px;
+      padding: 2rem 0;
+      margin: 0 auto;
+      .button {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include mobile-w {
+  .form_wrapper {
+    width: 100%;
+    padding-left: 1rem;
+    font-size: $font_10px;
+    .form_content {
+      max-width: 650px;
+      padding: 2rem 0;
+      margin: 0 auto;
+      .button {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .form_wrapper {
+    width: 100%;
+    padding-left: 1rem;
+    font-size: $font_10px;
+    .form_content {
+      max-width: 650px;
+      padding: 2rem 0;
+      margin: 0 auto;
+      .button {
+        text-align: center;
+      }
+    }
+  }
+}

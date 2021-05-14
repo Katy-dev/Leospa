@@ -1,0 +1,27 @@
+@import "../../../styles";
+.wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  .wrapper_input {
+    width: 100%;
+    border-bottom: $borderFirst;
+    .formInput_label {
+      .formInput {
+        width: 100%;
+        padding: 1rem 0.3rem;
+        background-color: transparent;
+        outline: none;
+        color: $gray;
+      }
+    }
+  }
+}
+
+@include mobile-w {
+  .formInput {
+    font-size: $font_10px;
+  }
+}
+

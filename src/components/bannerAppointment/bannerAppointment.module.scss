@@ -1,0 +1,73 @@
+@import '../styles.scss';
+
+.appointment_wrap {
+  display: flex;
+  height: 100%;
+  .appointment_container {
+   display: flex;
+    width: 40%;
+      .appointment_img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  }
+  .appointment_form {
+    display: flex;
+    width: 60%;
+  }
+}
+
+@include tablet {
+  .appointment_wrap {
+    display: block;
+    height: 100%;
+    width: 100%;
+    .appointment_container {
+      display: none;
+      .appointment_img {
+        display: none;
+      }
+    }
+    .appointment_form {
+      display: flex;
+      width: 100%;
+    }
+  }
+}
+
+@include mobile-w {
+  .appointment_wrap {
+    display: block;
+    height: 100%;
+    width: 100%;
+    .appointment_container {
+      display: none;
+      .appointment_img {
+        display: none;
+      }
+    }
+    .appointment_form {
+      display: flex;
+      width: 100%;
+    }
+  }
+}
+@include mobile {
+  .appointment_wrap {
+    display: block;
+    height: 100%;
+    width: 100%;
+    .appointment_container {
+      display: none;
+      .appointment_img {
+        display: none;
+      }
+    }
+    .appointment_form {
+      display: flex;
+      width: 100%;
+    }
+  }
+}

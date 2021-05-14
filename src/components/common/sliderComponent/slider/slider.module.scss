@@ -1,0 +1,43 @@
+@import "../../../styles";
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $lightRed;
+  margin-bottom: 3rem;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    .container__reviews {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      height: 100%;
+      transition: 0.5s ease-in-out;
+    }
+
+    .left {
+      left: 2%;
+      @extend %btn-style;
+    }
+
+    .left img,
+    .right img {
+      border: 1px solid $red;
+      border-radius: 50%;
+      padding: 8px;
+    }
+
+    .left img {
+      transform: rotate(180deg);
+    }
+
+    .right {
+      @extend %btn-style;
+      right: 2%;
+    }
+  }
+}

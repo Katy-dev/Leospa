@@ -1,0 +1,6 @@
+@import './mixins';
+
+@include font('Proxima Nova', 'proxima nova', 'ProximaNova-Bold', '800', 'normal');
+@include font('Proxima Nova', 'proxima nova', 'ProximaNova-SemiBold', '600', 'normal');
+@include font('Proxima Nova', 'proxima nova', 'ProximaNova-Regular', '400', 'normal');
+@include font('Proxima Nova', 'proxima nova', 'ProximaNova-Light', '300', 'normal');
