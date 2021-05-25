@@ -11,6 +11,7 @@ const initialValues = {
     name: "",
     email: "",
     phone: "",
+    service: "",
     date: "",
     time: "",
     notes: ""
@@ -27,10 +28,21 @@ const FormAppointment = () => {
      <div className={styles.form_wrapper}>
         <Formik
             initialValues={initialValues}
-            onSubmit={(values, resetForm, { setSubmitting }) => {
-                alert("Form is validated! Submitting the form...");
-                setSubmitting(false);
-                resetForm();
+            onSubmit={(values, actions) => {
+                setTimeout(() => {
+                    alert(JSON.stringify(values, null, 2));
+                    actions.setSubmitting(false);
+                }, 400);                actions.resetForm({
+                    values: {
+                        name: "",
+                        email: "",
+                        phone: "",
+                        service: "",
+                        date: "",
+                        time: "",
+                        notes: ""
+                    },
+                });
             }}
             validationSchema={validationField}
         >
@@ -39,14 +51,17 @@ const FormAppointment = () => {
                   handleChange,
                   handleBlur,
                   isSubmitting,
+                  handleSubmit,
               }) => (
                 <Form
+                    onSubmit={handleSubmit}
                     className={styles.form_content}
                 >
                     <div className={styles.input_group_wrapper}>
                     <Field
                         type="text"
                         name="name"
+                        formname="appointment"
                         component={FormInput}
                         placeholder="NAME"
                         onChange={handleChange}
@@ -56,6 +71,7 @@ const FormAppointment = () => {
                         <Field
                         type="email"
                         name="email"
+                        formname="appointment"
                         placeholder="EMAIL ADDRESS"
                         component={FormInput}
                         onChange={handleChange}
@@ -85,6 +101,7 @@ const FormAppointment = () => {
                     <Field
                         type="tel"
                         name="phone"
+                        formname="appointment"
                         placeholder="PHONE NUMBER"
                         component={FormInput}
                         onChange={handleChange}
@@ -96,6 +113,7 @@ const FormAppointment = () => {
                     <Field
                         type="date"
                         name="date"
+                        formname="appointment"
                         component={FormInput}
                         placeholder="date"
                         onChange={handleChange}
@@ -105,6 +123,7 @@ const FormAppointment = () => {
                     <Field
                         type="time"
                         name="time"
+                        formname="appointment"
                         component={FormInput}
                         placeholder="time"
                         onChange={handleChange}
@@ -116,6 +135,7 @@ const FormAppointment = () => {
                     <FormTextArea
                         placeholder={"YOUR NOTES"}
                         name ="notes"
+                        formname="appointment"
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.notes}

@@ -4,7 +4,8 @@
   margin-bottom: 2rem;
   .notes_wrapper {
     width: 98%;
-    font-size: $font_13px;
+    font-size: $font_15px;
+    font-weight: $regular;
     background-color: transparent;
     padding: 1rem 0 1rem 1rem;
     border-bottom: $borderFirst;
@@ -17,6 +18,12 @@
     font-size: $font_13px;
     padding: 0.5rem;
   }
+}
+.notes_wrapper_feedback {
+  border: $borderFirst;
+  width: 100%;
+  padding: 1rem 0 1rem 1rem;
+  margin-top: 0.5rem;
 }
 @include mobile-w {
   .notes_wrapper {

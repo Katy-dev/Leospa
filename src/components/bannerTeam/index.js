@@ -46,19 +46,19 @@ const BannerTeam = () => {
                                     <span>{member.position}</span>
                                     <div className={styles.member_social}>
                                         <a href="https://www.facebook.com/"
-                                           target="_blank">
+                                           target="_blank" rel="noreferrer">
                                             <img src={facebook} alt="social"/>
                                         </a>
                                         <a href="https://www.linkedin.com/"
-                                           target="_blank">
+                                           target="_blank" rel="noreferrer">
                                             <img src={linkedin} alt="social"/>
                                         </a>
                                         <a href="https://twitter.com/"
-                                           target="_blank">
+                                           target="_blank" rel="noreferrer">
                                             <img src={twitter} alt="social"/>
                                         </a>
                                         <a href="https://www.instagram.com/"
-                                           target="_blank">
+                                           target="_blank" rel="noreferrer">
                                             <img src={instagram} alt="social"/>
                                         </a>
                                     </div>

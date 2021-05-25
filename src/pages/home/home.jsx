@@ -9,7 +9,7 @@ import BannerReview from "../../components/common/sliderComponent/slider/slider"
 import BannerTeam from "../../components/bannerTeam";
 import BannerAppointment from "../../components/bannerAppointment";
 import BannerBlog from "../../components/bannerBlog";
-import FeedbackForm from "../../components/feedbackForm";
+import BannerFeedback from "../../components/bannerFeedback";
 import Footer from "../../components/footer";
 
 export const HomePage = () => {
@@ -24,7 +24,6 @@ export const HomePage = () => {
             <BannerTeam />
             <BannerAppointment />
             <BannerBlog />
-            <FeedbackForm />
             <Footer />
         </div>
     )

@@ -4,11 +4,17 @@ import styles from "./formTextArea.module.scss";
 
 const FormTextArea = ({ ...props }) => {
     const [field, meta] = useField(props);
+    const { formname } = props;
     return (
         <div className={styles.container}>
             <label>
                 <textarea
-                    className={styles.notes_wrapper}
+                    className={
+                        formname === 'appointment'
+                        ? `${styles.notes_wrapper} `
+                        : formname === 'feedback'
+                            ? `${styles.notes_wrapper_feedback}`
+                            : 'incorrect form'}
                     {...field}
                     {...props}
                 />

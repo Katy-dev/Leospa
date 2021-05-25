@@ -31,7 +31,7 @@ export const validationField = Yup.object().shape({
         .required("This field is required"),
 
     notes: Yup.string()
-        .min(10, "This field must be min 2 characters")
+        .min(10, "This field must be min 10 characters")
         .max(180, "The number of characters entered can't  exceed 20 characters")
     .required("This field is required"),
 

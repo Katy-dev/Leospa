@@ -4,9 +4,11 @@
   @extend %container;
   text-align: center;
   margin-bottom: 3rem;
+  max-width: 950px;
+  position: relative;
   .container_description {
     margin: 0 auto;
-    width: 85%;
+    padding: 3rem;
   }
   .title {
     margin-bottom: 2rem;
@@ -18,12 +20,17 @@
     color: $gray;
   }
   .feedback__container {
-
+    display: flex;
     .address__container {
-      display: flex;
-      justify-content: center;
+      width: 40%;
+      padding: 1rem 2rem;
       .address__wrapper {
-        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 1.5rem;
+        font-size: $font_13px;
+        font-weight: $regular;
         .address__wrapper_icon {
           background-color: $red;
           width: 50px;
@@ -31,18 +38,27 @@
           display: block;
           border-radius: 50%;
           position: relative;
+          padding: 1rem 1.5rem;
+          text-align: left;
             & img {
               @extend %position-center;
             }
         }
         .address__wrapper_descr {
-
+          color: $gray;
+          font-size: $font_15px;
+          font-weight: $regular;
+          padding-left: 2rem;
+          text-align: left;
         }
       }
     }
     .feedback__form {
-      width: 50%;
-      background-color: $red;
+      width: 60%;
     }
+  }
+  .feedback__avatar_wrapper {
+    width: 60%;
+    padding-bottom: 2rem;
   }
 }
